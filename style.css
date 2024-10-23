@@ -72,7 +72,6 @@
   bottom: 20%;
   position: absolute;
   animation: mario 19s infinite ease-out;
-  animation-delay: 5s;
 }
 
 @keyframes mario {
@@ -88,6 +87,7 @@
   bottom: 5%;
   position: absolute;
   animation: luigi 20s infinite linear;
+  animation-delay: 2s;
 }
 
 @keyframes luigi {
