@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+}
+
+.sky {
+  width: 100%;
+  height: 37%;
+  background-color: skyblue;
+}
+
+.grass {
+  z-index: 1;
+  width: 100%;
+  height: 30%;
+  background-color: #2e8b58;
+}
+
+.road1 {
+  z-index: 1;
+  width: 100%;
+  height: 20%;
+  background-color: #696969;
+  border-top: 10px solid #808080;
+  border-bottom: 10px dashed white;
+}
+
+.road2 {
+  z-index: 1;
+  width: 100%;
+  height: 13%;
+  background-color: #696969;
+}
+
+.sun {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  animation: sun 20s infinite linear;
+}
+
+@keyframes sun{
+  0%{ transform: rotate(0deg);}
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.tree {
+  top: 20%;
+  position: absolute;
+  animation: tree 800ms infinite linear;
+}
+
+@keyframes tree {
+  0% {
+    transform: translateX(90vw);
+  }
+  100% {
+    transform: translateX(0vw);
+  }
+}
+
+.mario {
+  bottom: 20%;
+  position: absolute;
+  animation: mario 19s infinite ease-out;
+  animation-delay: 5s;
+}
+
+@keyframes mario {
+  0% {
+    transform: translateX(0vw);
+  }
+  100% {
+    transform: translateX(90vw);
+  }
+}
+
+.luigi {
+  bottom: 5%;
+  position: absolute;
+  animation: luigi 20s infinite linear;
+}
+
+@keyframes luigi {
+  0% {
+    transform: translate(90vw, 5vh);
+  }
+  25%{ transform: translate(65vw, 0vh);}
+  50%{ transform: translate(50vw, 5vh);}
+  75%{  transform: translate(65vw, 5vh);}
+
+  100% {
+    transform: translate(90vw, 0vh);
+  }
+}
+
+.cloud {
+    top: 0;
+    position: absolute;
+    animation: cloud 3s infinite linear;
+  }
+  
+  @keyframes cloud {
+    0% {
+      transform: translate(90vw, 10vh);
+    }
+    25%{
+      transform: translate(75vw, 0vh);
+    }
+    50%{ transform: translate(50vw, 10vh);}
+    75% {transform: translate(25vw, 0vh);}
+    100% {
+      transform: translate(10vw, 10vh);
+    }
+  }
