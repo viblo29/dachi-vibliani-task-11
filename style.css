@@ -46,8 +46,10 @@
   animation: sun 20s infinite linear;
 }
 
-@keyframes sun{
-  0%{ transform: rotate(0deg);}
+@keyframes sun {
+  0% {
+    transform: rotate(0deg);
+  }
   100% {
     transform: rotate(360deg);
   }
@@ -87,16 +89,21 @@
   bottom: 5%;
   position: absolute;
   animation: luigi 20s infinite linear;
-  animation-delay: 2s;
 }
 
 @keyframes luigi {
   0% {
     transform: translate(90vw, 5vh);
   }
-  25%{ transform: translate(65vw, 0vh);}
-  50%{ transform: translate(50vw, 5vh);}
-  75%{  transform: translate(65vw, 5vh);}
+  25% {
+    transform: translate(65vw, 0vh);
+  }
+  50% {
+    transform: translate(50vw, 5vh);
+  }
+  75% {
+    transform: translate(65vw, 5vh);
+  }
 
   100% {
     transform: translate(90vw, 0vh);
@@ -104,21 +111,25 @@
 }
 
 .cloud {
-    top: 0;
-    position: absolute;
-    animation: cloud 3s infinite linear;
+  top: 0;
+  position: absolute;
+  animation: cloud 3s infinite linear;
+}
+
+@keyframes cloud {
+  0% {
+    transform: translate(90vw, 10vh);
   }
-  
-  @keyframes cloud {
-    0% {
-      transform: translate(90vw, 10vh);
-    }
-    25%{
-      transform: translate(75vw, 0vh);
-    }
-    50%{ transform: translate(50vw, 10vh);}
-    75% {transform: translate(25vw, 0vh);}
-    100% {
-      transform: translate(10vw, 10vh);
-    }
+  25% {
+    transform: translate(75vw, 0vh);
   }
+  50% {
+    transform: translate(50vw, 10vh);
+  }
+  75% {
+    transform: translate(25vw, 0vh);
+  }
+  100% {
+    transform: translate(10vw, 10vh);
+  }
+}
